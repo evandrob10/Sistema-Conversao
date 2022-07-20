@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    border: 1px solid;
+    border-radius: 15px;
+    margin: auto;
+    width: 40vw;
+    min-width:50%;
+    height: 50vh;
+    background-color: rgb(137, 187, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    width: 80%;
+    padding: 0.31em 0.625em;
+    text-align: center;
+}
+tbody tr:first-child td{
+    width:30%;
+}
+tbody tr:nth-of-type(2) td{
+    text-align: center;
+}
+select,input,th{
+    font-size: 1.125em;
+}
+select,input,button{
+    border-radius: 0.5em;
+}
+input{
+    padding: 0.625em;
+    height: 2.5em;
+}
+table{
+    max-width: 40%;
+    border-spacing: 1.25em;
+}
+thead{
+    width: 100%;
+}
+tbody{
+    width: 100%;
+}
+tbody tr:last-of-type{
+    border: 1px solid;
+}
+td[colspan]{
+    padding-top: 1.25em;
+    position: relative;
+    text-align: center;
+}
+button{
+    color: #fff;
+    padding: 0.94em 1.25em;
+    font-weight: bold;
+    background-color:rgb(9, 144, 9);
+    
+}
+/* poupup */
+.poupup-resultado{
+    display: none;
+    border: 1px solid;
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    top:60%;
+    right: 50%;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 0.5em 0 0.5em 0.5em; 
+}
+.poupup-container{ 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.poupup-close{
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    padding: 1px 6px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Promisses</title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <script src="js/javascript.js" defer></script>
+    </head>
+    <body>
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Moeda Origem</th>
+                        <th>Moeda destino</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="number" min="0" placeholder="0" name="moeda-origem"/>
+                        </td>
+                        <td>
+                            <input type="number" min="0" value="0" name="moeda-origem" readonly/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="teste">
+                            <select name="moeda-origem">
+                                <option value="">---</option>
+                            </select>
+                        </td>
+                        <td class="teste">
+                            <select name="moeda-destino"  disabled>
+                                <option value="" id="teste">---</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">CONVERTER</button>
+                            <div class="poupup-resultado">
+                                <div class="poupup-container">
+                                    <div class="poupup-close">x</div>
+                                    <div class="poupup">
+                                        <p class="texto-resultado"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
